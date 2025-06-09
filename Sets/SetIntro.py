@@ -1,7 +1,7 @@
 #PYTHON SETS
 r"""
 Set
-Sets are used to store myltiple items in a single variable.
+Sets are used to store multiple items in a single variable.
 Set is one of 4 built-in data types in Pyton used to Store collections of data, the other 3 are LIST,TUPLE, AND DICTIONARY, all with different qualities and usage.
 A set is a collection which is unordered, inchangable*, and unindexed.
 """
