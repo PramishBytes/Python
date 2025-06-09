@@ -1,3 +1,5 @@
+
+# check server.py first
 import socket
 
 HEADER = 64
