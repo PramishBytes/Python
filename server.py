@@ -16,8 +16,7 @@ server.bind(ADDR)
 def handle_client(conn,addr):
     print(f"[NEW CONNECTION]{addr} connected.")
     connected = True
-    while connected: 
-       while connected:
+    while connected:
         try:
             msg_length = conn.recv(HEADER).decode(FORMAT)
             if not msg_length:
