@@ -39,3 +39,26 @@ make_sandwich("rye", "ham")
 
 '''
 
+def make_sandwich(bread_type, filling,cheese = "none", toasted = False):
+    # Start building the sandwich description
+    if toasted:
+        sandwich = f'Making a toasted {bread_type} sandwich with {filling}'
+
+    else:
+        sandwich = f'Making a {bread_type} sandwich with {filling}'
+
+    
+    # Add cheese if it's not "none"
+    if cheese != "none":
+        sandwich += f' and {cheese} cheese'
+
+    # Add the period at the end
+    sandwich += "."
+
+    return sandwich 
+
+# Test the function with the example inputs
+
+print(make_sandwich("wheat", "turkey", "cheddar", True))
+print(make_sandwich("rye", "ham"))
+
