@@ -42,3 +42,26 @@ city_name = "New York"
 This should yield the population of New York, which is 8336817 in this dictionary.
 
 '''
+
+def get_city_population(populations,city):
+    
+    try:
+        return populations[city]
+    
+    except KeyError:
+        raise KeyError(f'City "{city}" not found in population data.')
+    
+# Example 1:
+city_populations = {"New York": 8336817, "Los Angeles": 3979576, "Chicago": 2679044}
+
+city_name = "Tampa"
+
+get_city_population(city_populations,city_name)
+
+# Example 2:
+
+city_populations = {"New York": 8336817, "Los Angeles": 3979576, "Chicago": 2679044}
+
+city_name = "New York"
+
+get_city_population(city_populations,city_name)
