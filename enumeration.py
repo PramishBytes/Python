@@ -35,3 +35,15 @@ Output:
 1 C
 2 C++
 '''
+
+
+fruits = ["apple", "banana", "orange"]
+for index, fruit in enumerate(fruits):
+    print(f"At position {index}, I found a {fruit}")
+    
+"""
+OUTPUT: 
+At position 0, I found a apple
+At position 1, I found a banana
+At position 2, I found a orange
+"""
