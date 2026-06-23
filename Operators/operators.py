@@ -173,7 +173,33 @@ or -> OR
 
 
 
+"""
+% Operator
 
+This is one of the oldest ways to format strings in Python. 
+It uses the % operator to format a set of variables enclosed in a tuple (a fixed size list), together with a format string, 
+which contains normal text together with argument specifiers, special symbols like %s and %d.
+
+example: 
+
+name = "Pramish Adhikari"
+age = 25
+print("My name is %s and I am %d years old." % (name, age))
+
+Output: My name is Pramish Adhikari and I am 25 years old.
+
+"My name is %s and I am %d years old.": This is a string that includes format specifiers:
+
+%s: This is a placeholder for a string.
+
+%d: This is a placeholder for an integer.
+
+% (name, age): This is a tuple containing the variables name and age. The values of these variables will replace the placeholders in the string.
+
+Each of these methods has its own advantages and use cases. However, f-strings are generally considered the most modern and preferred way to format strings in Python due to their readability and performance.
+
+
+"""
 
 
 
